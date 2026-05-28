@@ -6,11 +6,15 @@
     <title>Linktree.stewieogriffin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Fundo com Degradê Vermelho Escuro de Alta Qualidade */
+        /* Fundo Amarelo Family Guy com padrão Pop Art de quadrinhos */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4a0e17, #1a0508);
-            color: #ffffff;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            background-color: #ffcc00;
+            background-image: radial-gradient(#e6b800 15%, transparent 16%),
+                              radial-gradient(#e6b800 15%, transparent 16%);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            color: #000000;
             margin: 0;
             padding: 0;
             display: flex;
@@ -24,34 +28,40 @@
             text-align: center;
             max-width: 400px;
             width: 90%;
-            padding: 30px 20px;
+            padding: 40px 25px;
+            background: #ffffff;
+            border: 5px solid #000000;
+            border-radius: 30px;
+            box-shadow: 10px 10px 0px #000000; /* Sombra sólida estilo cartoon */
         }
 
-        /* Foto de Perfil com Borda Amarela Vibrante (Logo Family Guy / Roupa Stewie) */
+        /* Foto de Perfil com contorno de desenho animado */
         .profile-img {
-            width: 110px;
-            height: 110px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            border: 4px solid #ffcc00;
+            border: 5px solid #000000;
             object-fit: cover;
-            box-shadow: 0 0 25px rgba(255, 204, 0, 0.6);
+            box-shadow: 5px 5px 0px #ff3344;
             margin-bottom: 15px;
         }
 
-        /* Nome em Branco de Alto Contraste */
+        /* Nome em estilo Fonte de Quadrinhos/Logo */
         h1 {
-            font-size: 26px;
+            font-size: 32px;
             margin: 10px 0 5px 0;
-            font-weight: 700;
-            color: #ffffff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #000000;
+            -webkit-text-stroke: 1px #000000;
         }
 
-        /* Arroba em Amarelo para destacar */
+        /* Arroba em destaque */
         .username {
-            font-size: 16px;
-            color: #ffcc00;
-            font-weight: 600;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            color: #ff3344; /* Vermelho do Stewie */
+            font-weight: bold;
             margin-bottom: 30px;
         }
 
@@ -59,10 +69,10 @@
         .links-container {
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 20px;
         }
 
-        /* Botões Sólidos e Escuros para Destacar no Fundo */
+        /* Botões Estilo Quadrinhos (Pop/Cartoon) */
         .link-button {
             display: flex;
             align-items: center;
@@ -71,54 +81,59 @@
             padding: 16px;
             text-decoration: none;
             color: #ffffff;
-            font-size: 16px;
-            font-weight: 700;
-            border-radius: 50px;
-            background: #281115;
-            border: 2px solid #ffcc00;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 15px;
+            border: 4px solid #000000;
+            text-shadow: 2px 2px 0px #000000;
+            transition: all 0.2s ease;
         }
 
         .link-button i {
-            font-size: 22px;
+            font-size: 24px;
         }
 
-        /* Efeitos de Cores ao Passar o Mouse (Hover) */
-        .instagram:hover {
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-            border-color: transparent;
-            box-shadow: 0 0 20px rgba(220, 39, 67, 0.6);
-            transform: scale(1.04);
+        /* Cores customizadas dos botões (Paleta Stewie/Family Guy) */
+        .instagram {
+            background-color: #ff3344; /* Vermelho Stewie */
+            box-shadow: 5px 5px 0px #000000;
         }
 
-        .tiktok:hover {
-            background: #000000;
-            border-color: #00f2fe;
-            box-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
-            transform: scale(1.04);
+        .tiktok {
+            background-color: #00bfff; /* Azul clássico de fundo */
+            box-shadow: 5px 5px 0px #000000;
         }
 
+        .youtube {
+            background-color: #000000; /* Preto para dar contraste */
+            box-shadow: 5px 5px 0px #ff3344;
+        }
+
+        /* Efeitos de clique/hover estilo retro */
+        .link-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px #000000;
+        }
+        
         .youtube:hover {
-            background: #ff0000;
-            border-color: transparent;
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
-            transform: scale(1.04);
+            box-shadow: 7px 7px 0px #ff3344;
         }
 
         /* Rodapé */
         footer {
-            margin-top: 45px;
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.4);
-            font-weight: 500;
+            font-family: 'Arial', sans-serif;
+            margin-top: 35px;
+            font-size: 14px;
+            color: #000000;
+            font-weight: bold;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
 
     <div class="profile-container">
-        <img src="Perfil.png" alt="Stewie Griffin" class="profile-img">
+        <img src="Perfil.png">
 
         <h1>Stewie Griffin</h1>
         <div class="username">@stewieogriffin</div>
@@ -126,20 +141,20 @@
         <div class="links-container">
             
             <a href="https://www.instagram.com/stewieogriffin?igsh=MTE4dnFvdzJuYjZpOQ==" target="_blank" class="link-button instagram">
-                <i class="fab fa-instagram"></i> Instagram
+                <i class="fab fa-instagram"></i> INSTAGRAM
             </a>
 
             <a href="https://www.tiktok.com/@stewieogriffin" target="_blank" class="link-button tiktok">
-                <i class="fab fa-tiktok"></i> TikTok
+                <i class="fab fa-tiktok"></i> TIKTOK
             </a>
 
             <a href="https://youtube.com/@stewiefamilyguyyy?si=90sbosjivQzCv8nk" target="_blank" class="link-button youtube">
-                <i class="fab fa-youtube"></i> YouTube
+                <i class="fab fa-youtube"></i> YOUTUBE
             </a>
 
         </div>
 
-        <footer>Segue Noix</footer>
+        <footer>Siga para mais planos de dominação mundial!</footer>
     </div>
 
 </body>
