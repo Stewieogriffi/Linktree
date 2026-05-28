@@ -116,7 +116,15 @@
         }
         
         .youtube:hover {
-            box-shadow: 7px 7px 0px #ff3344;
+            background-color: #000000; /* Mantém o fundo preto no hover */
+            border-color: #ff0000; /* Muda a borda para vermelho no hover */
+            box-shadow: 7px 7px 0px #ff0000; /* Muda a sombra para vermelho no hover */
+            transform: translate(-2px, -2px);
+        }
+
+        /* Esta regra garante que o ícone e o texto fiquem vermelhos no hover */
+        .youtube:hover i, .youtube:hover {
+            color: #ff0000 !important; /* Muda o ícone e o texto para vermelho */
         }
 
         /* Rodapé */
